@@ -13,8 +13,8 @@ WEIGHTS = 'distilbert-base-uncased'
 # Performance on whole 6920 sentence set is very similar, but takes rather longer
 SET_SIZE = 2000
 
-df2 = pd.read_csv("/Users/ericgulottyjr/Downloads/redditdata.csv")
-test_df = pd.read_csv("/Users/ericgulottyjr/PoliticalDiscussion_HOTsubreddit.csv")
+df2 = pd.read_csv("Downloads/redditdata.csv")
+test_df = pd.read_csv("PoliticalDiscussion_HOTsubreddit.csv")
 
 con = df2[12050:]
 lib = df2[:804]
@@ -105,10 +105,6 @@ print(evaluate(RFC, test_features, test_labels))
 
 FRFC = FiveXRFC(train_features, train_labels)
 print(evaluate(FRFC, test_features, test_labels))
-
-
-#ABC = train_ABC(train_features, train_labels)
-#print(evaluate(ABC, test_features, test_labels))
 
 
 def get_tokens_generic(dataframe, tokenizer):
