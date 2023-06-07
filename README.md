@@ -10,16 +10,20 @@ The above graph displays the efficiency of our model in predicting the true poli
 Results
 After running a few test sentences through the predict_from_sentence() function, we decided to scrape forums on Reddit for real comments to run through the algorithm to test its accuracy under real world conditions. Liberal comments are taken from r/PoliticalDiscussion, while conservative comments are taken from r/Conservative. The sample size is relatively small, but each comment was randomly selected, with a certain degree of manual filtering through the data; as all users of Reddit can comment on a particular subreddit, we had to ensure that each comment we selected was both: (1) A proper representation of the political leaning we were selecting for, and (2) To a certain degree of specificity and length to ensure that the model has enough context to make a prediction.
 Sentence (Liberal)
-Prediction Output
+
+## Prediction Output
 True/False
 “Trump and his supporters are the ones who turned politics into a weird cult.”
 Liberal
 True
+
 “The Republican Party is QAnon. MAGA is QAnon.”
 Liberal
+
 True
 “Tax cuts for the rich doesn't work. We've known that for decades. But they just keep chasing the same failed policies for no reason. This entire thing makes no sense.”
 Conservative
+
 False
 “What do you think would happen if Obama tried to pull out? The country would have collapsed to the Taliban, and the Republicans would have shredded Obama and accused him of failing their war.”
 Liberal
